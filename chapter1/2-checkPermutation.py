@@ -1,6 +1,22 @@
 import unittest
 
 
+# check_permutation
+#
+# Used to check if two strings are permutations of each other
+#
+# params:
+# s1: string
+# s2: string
+#
+# returns:
+# boolean
+#
+# runtime:
+# O(n+k) where n is the length of string1 and k is length of string 2
+#
+# space complexity:
+# O(c) where c is each character in string 1
 def check_permutation(s1, s2):
     if len(s1) != len(s2):
         return False

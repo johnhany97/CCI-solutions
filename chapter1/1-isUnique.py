@@ -1,6 +1,22 @@
 import unittest
 
 
+# is_unique
+#
+# Used to check if a string is fully constituted of unique characters
+# As in, no characters are repeated.
+#
+# params:
+# s: string
+#
+# returns:
+# boolean
+#
+# runtime:
+# O(n) where n is the length of the string
+#
+# space complexity:
+# O(c) where c is each character in the string
 def is_unique(s):
     # Assuming ASCII
     if len(s) > 128:
@@ -22,6 +38,22 @@ def is_unique(s):
     return True
 
 
+# is_unique_2
+#
+# Used to check if a string is fully constituted of unique characters
+# As in, no characters are repeated. This one doesn't use extra data structures
+#
+# params:
+# s: string
+#
+# returns:
+# boolean
+#
+# runtime:
+# O(n^2) where n is the length of the string
+#
+# space complexity:
+# O(1)
 def is_unique_2(s):
     # This method will work without using any extra data structures
     # Assuming ASCII
