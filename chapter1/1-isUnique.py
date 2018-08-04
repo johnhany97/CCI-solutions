@@ -38,9 +38,20 @@ def is_unique_2(s):
 
 
 class Test(unittest.TestCase):
-    true_values = [(''), ('abc'), ('123'), ('ab cd'), ('ab12')]
-    false_values = [('abab'), ('aa'), ('1238db1'), ('abc abc'),
-                    ('rhsnzpbyzsdxhboxoqubjfqahhkcuaoigeynrwkctxorhxgbflzdfiytafufwzlyzuhorjcikrjwzwsemtetoxfcuzyjohbnmpqgihdumnmbpkwdnkhdodsnysdhgdhaf')]
+    true_values = [
+        (''),
+        ('abc'),
+        ('123'),
+        ('ab cd'),
+        ('ab12')
+    ]
+    false_values = [
+        ('abab'),
+        ('aa'),
+        ('1238db1'),
+        ('abc abc'),
+        ('rhsnzpbyzsdxhboxoqubjfqahhkcuaoigeynrwkctxorhxgbflzdfiytafufwzlyzuhorjcikrjwzwsemtetoxfcuzyjohbnmpqgihdumnmbpkwdnkhdodsnysdhgdhaf')
+    ]
 
     def test_unique(self):
         for str in self.true_values:
